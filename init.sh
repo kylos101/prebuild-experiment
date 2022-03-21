@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-sudo apt install stress -y
+sudo apt install stress atop -y
 
 echo "Fire it up"
 

@@ -1,5 +1,9 @@
 image: gitpod/workspace-node
 
 tasks:
-    - init: ${GITPOD_REPO_ROOT}/init.sh
+    - before: ${GITPOD_REPO_ROOT}/init.sh
       command: echo 'some task'
+    - before: atop -e 00:01
+      command: echo 'some task'
+    # - init: ${GITPOD_REPO_ROOT}/init.sh
+    #   command: echo 'some task'
