@@ -5,8 +5,14 @@ services:
   test:
     image: ubuntu:latest
     container_name: test
-    command: apt update && apt install stress -y && stress -c 4 -i 4 -m 2 --vm-bytes 128M -d 2 --timeout 100s
+    command: >
+      bash -c "apt update
+      && apt install stress -y
+      && stress -c 4 -i 4 -m 2 --vm-bytes 128M -d 2 --timeout 60s -v"
   again:
     image: ubuntu:latest
     container_name: again
-    command: apt update && apt install stress -y && stress -c 4 -i 4 -m 2 --vm-bytes 128M -d 2 --timeout 100s
+    command: >
+      bash -c "apt update
+      && apt install stress -y
+      && stress -c 4 -i 4 -m 2 --vm-bytes 128M -d 2 --timeout 60s -v"
