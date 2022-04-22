@@ -1,4 +1,4 @@
-image: gitpod/workspace-node
+image: gitpod/workspace-full:2022-04-22-13-51-04
 
 tasks:
     - init: ${GITPOD_REPO_ROOT}/init.sh
