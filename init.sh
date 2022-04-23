@@ -18,3 +18,4 @@ dd if=/dev/zero of=upload_test bs=1M count=1000
 echo "I got here again, again more, and again"
 echo another test 2
 echo another test 3
+echo another test 4
