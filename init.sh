@@ -20,3 +20,4 @@ echo another test 2
 echo another test 3
 echo another test 4
 echo another test 5
+echo another test 6
