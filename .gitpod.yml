@@ -2,8 +2,9 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-    - init: ${GITPOD_REPO_ROOT}/init.sh
-      command: echo 'some task'
+    - before: ${GITPOD_REPO_ROOT}/break-on-start.sh
+    # - init: ${GITPOD_REPO_ROOT}/init.sh
+    #   command: echo 'some task'
 
 github:
   prebuilds:
