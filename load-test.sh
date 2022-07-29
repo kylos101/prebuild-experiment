@@ -1,5 +1,5 @@
 #!/bin/bash -e
-# go
+# go again
 for i in {76..96}
 do
     git checkout -b kyleb/"$i"-prebuild
