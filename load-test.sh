@@ -6,4 +6,6 @@ do
     git add .
     git commit -m "$i another test"
     git push --set-upstream origin kyleb/"$i"-prebuild
+    git checkout main
+    git pull --ff-only
 done
