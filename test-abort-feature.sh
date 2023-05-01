@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 while true = true; do
     FOO="$(date)"
     touch bar.txt && cat "$FOO" > bar.txt
