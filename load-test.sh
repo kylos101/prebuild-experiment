@@ -1,7 +1,7 @@
 #!/bin/bash -e
 # go again again
 
-for i in {761..790}
+for i in {791..791}
 do
     git checkout -b kyleb/"$i"-prebuild
     echo "echo another test $i" >> init.sh
