@@ -22,3 +22,4 @@ echo another test 702
 echo another test 703
 echo another test 704
 echo another test 705
+echo another test 706
