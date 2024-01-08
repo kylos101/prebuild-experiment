@@ -3,7 +3,11 @@ image: gitpod/workspace-full:latest
 tasks:
     - init: ${GITPOD_REPO_ROOT}/init.sh
       command: echo 'some task'
-
+    - name: headless-test
+      init: |
+        if [[ -n "$GITPOD_HEADLESS" ]]; then
+          echo is-headless > /workspace/headless-check
+        fi
 github:
   prebuilds:
     # enable for the default branch (defaults to true)
