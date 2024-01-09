@@ -6,8 +6,9 @@ tasks:
     - name: headless-test
       init: |
         if [[ -n "$GITPOD_HEADLESS" ]]; then
-          echo is-headless > /workspace/headless-check
+          echo is-headless >> /workspace/headless-test
         fi
+        echo done >> /workspace/headless-test
 github:
   prebuilds:
     # enable for the default branch (defaults to true)
