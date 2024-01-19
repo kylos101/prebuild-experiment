@@ -4,4 +4,4 @@ tasks:
     - init: ${GITPOD_REPO_ROOT}/init.sh
       command: echo 'some task'
     - name: headless-test
-      init: init.sh
+      init: ./init.sh
