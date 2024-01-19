@@ -2,11 +2,11 @@
 
 echo "Fire it up"
 
-if [[ -n "$GITPOD_HEADLESS:-" ]]; then
+if [[ -n "${GITPOD_HEADLESS}:-" ]]; then
     echo "$(date) is-headless-with-default" >> /workspace/init-test
 fi
 sleep 5
-if [[ -n "$GITPOD_HEADLESS" ]]; then
+if [[ -n "${GITPOD_HEADLESS}" ]]; then
     echo "$(date) is-headless-no-default" >> /workspace/init-test
 fi
 sleep 5
