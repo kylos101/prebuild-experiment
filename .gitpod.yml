@@ -5,23 +5,8 @@ tasks:
       command: echo 'some task'
     - name: headless-test
       init: |
-        if [[ -n "$GITPOD_HEADLESS" ]]; then
-          echo is-headless >> /workspace/headless-test
+        if [[ -n "$GITPOD_HEADLESS:-" ]]; then
+          echo "is-headless $(date) >> /workspace/at-init
         fi
-        echo done >> /workspace/headless-test
-github:
-  prebuilds:
-    # enable for the default branch (defaults to true)
-    master: true
-    # enable for all branches in this repo (defaults to false)
-    branches: true
-    # enable for pull requests coming from this repo (defaults to true)
-    pullRequests: true
-    # enable for pull requests coming from forks (defaults to false)
-    pullRequestsFromForks: false
-    # add a check to pull requests (defaults to true)
-    addCheck: true
-    # add a "Review in Gitpod" button as a comment to pull requests (defaults to false)
-    addComment: false
-    # add a "Review in Gitpod" button to the pull request's description (defaults to false)
-    addBadge: false
+        sleep 10
+        echo "done $(date) >> /workspace/headless-test
