@@ -10,7 +10,7 @@ if [[ -n "${GITPOD_HEADLESS}" ]]; then
     echo "$(date) is-headless-no-default" >> /workspace/init-test
 fi
 sleep 5
-echo "$(date) done" >> /workspace/init-test
+echo "$(date) done again" >> /workspace/init-test
 
 DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
 mkdir -p $DOCKER_CONFIG/cli-plugins
