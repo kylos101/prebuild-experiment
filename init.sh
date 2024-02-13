@@ -1,5 +1,6 @@
 #!/bin/bash -e
 
+exit 42
 echo "Fire it up"
 
 if [[ -n "${GITPOD_HEADLESS}:-" ]]; then
